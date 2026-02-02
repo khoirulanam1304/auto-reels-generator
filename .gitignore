@@ -2,3 +2,5 @@ __pycache__
 input/
 output/
 *.mp4
+temp_text.txt
+used_questions.json

@@ -18,6 +18,8 @@ def write_wrapped_text_to_file(text, output_file):
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("\n".join(final_lines))
 
+    return len(final_lines)
+
 def split_long_sentence(sentence, max_len):
     words = sentence.split()
     lines = []

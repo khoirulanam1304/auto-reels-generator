@@ -8,7 +8,7 @@ cg = ContentGenerator()
 
 clip = vc.cut_random_clip(duration=12, output_name="raw_clip.mp4")
 
-question = qb.get_random_question()
+question = qb.get_random_unused_question()
 print("Soal:", question)
 
 final_video = "output/final_video.mp4"
