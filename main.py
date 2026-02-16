@@ -12,6 +12,6 @@ question = qb.get_random_unused_question()
 print("Soal:", question)
 
 final_video = "output/final_video.mp4"
-cg.add_text_overlay(clip, question, final_video)
+cg.add_text_overlay(clip, question, final_video, font_path=None)
 
 print("Video final jadi:", final_video)
