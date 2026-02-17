@@ -31,7 +31,8 @@ def write_wrapped_text_to_file(
             continue
         final_lines.extend(_wrap_sentence_by_width(sentence, max_width, font))
 
-    with open(output_file, "w", encoding="utf-8") as f:
+    # Force LF newline so ffmpeg drawtext won't render CR as a square box.
+    with open(output_file, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(final_lines))
 
     return len(final_lines)
